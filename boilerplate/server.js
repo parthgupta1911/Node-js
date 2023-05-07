@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
-const port = process.env.PORT || 1100;
+const port = process.env.PORT || 1120;
 if (process.env.NODE_ENV === "teach") {
   console.log(`on server.js to run the application on PORT=${port}`);
 }
