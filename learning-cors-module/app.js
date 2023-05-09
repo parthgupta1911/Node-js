@@ -1,4 +1,10 @@
 const app = require("express")();
+const cors = require("./cors/index");
+/*app.use((req, res, next) => {
+  console.log(req.headers.origin);
+  next();
+});*/
+app.use(cors);
 
 app.use((req, res, next) => {
   if (process.env.NODE_ENV === "teach") {
